@@ -86,7 +86,7 @@ Dev. UAT:
 2. the right wing with numbers increasing. [3,2,1] --> [1,2,3]
 3. A) the two wings have the same length - ODD [].length === 5 --> L === 2; B === 1; R === 2
 3. B) the two wings have the same length - EVEN [].length === 4 --> L === 2; B === 0; R === 2
-4. each integer l of the left wing must be greater or equal to its counterpart r in the right wing
+4. 🤔 >> each integer l of the left wing must be greater or equal to its counterpart r in the right wing
 
 
 

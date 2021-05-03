@@ -23,7 +23,7 @@ const extractTheBottomOfTheValley = (numbers) => (numbers.length % 2 !== 0 ? [Nu
 const assemblyTheValley = (valley) => [...valley.left, ...valley.bottom, ...valley.right];
 
 // !! Exported Methods -------------------------------------------------------------------------------------------------
-const buildTheValley = (numbers) => {
+const buildTheValleyComponents = (numbers) => {
   const bottomOfTheValley = extractTheBottomOfTheValley(numbers);
   const leftWingOfTheValley = createTheLeftWing(numbers);
   const rightWingOfTheValley = createTheRightWing(numbers);
@@ -37,8 +37,8 @@ const buildTheValley = (numbers) => {
 const makeValley = (numbers) => {
   if (!validInput(numbers)) return 'ERROR';
 
-  const valley = buildTheValley(numbers);
+  const valley = buildTheValleyComponents(numbers);
   return assemblyTheValley(valley);
 };
 
-module.exports = { makeValley, buildTheValley };
+module.exports = { makeValley, buildTheValleyComponents };
